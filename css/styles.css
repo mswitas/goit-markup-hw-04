@@ -145,7 +145,7 @@ main>.section:nth-child(3) {
 
 .hero {
     background-image:linear-gradient(rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)), url(/images/hero-image.jpg);
+            rgba(46, 47, 66, 0.7)), url(../images/hero-image.jpg);
     text-align: center;
     padding: 188px 0;
 }
