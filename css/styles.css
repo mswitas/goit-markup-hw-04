@@ -148,6 +148,10 @@ main>.section:nth-child(3) {
             rgba(46, 47, 66, 0.7)), url(../images/hero-image.jpg);
     text-align: center;
     padding: 188px 0;
+    max-width: 1440px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
 }
 
 .main-header {
@@ -253,28 +257,38 @@ main>.section:nth-child(3) {
 }
 
 .social-link {
-    color: var(--brand-color);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--brand-color);
 }
 
-.social-icon {
-    fill: currentColor;
+.social-link:hover,
+.social-link:focus {
+    background-color: var(--pressed-state-color);
 }
 
-.social-icon:hover,
-.social-icon:focus {
-    fill: var(--pressed-state-color);
-}
 
 .client-link {
     color: var(--subtle-text-color);
 }
 
-.client-icon {
-    fill: currentColor;
+.client-link:hover,
+.client-link:focus {
+    color: var(--pressed-state-color);
 }
 
-.client-icon:hover {
-    fill: var(--pressed-state-color);
+
+
+.client-icon {
+    width: 168px;
+    height: 88px;
+    fill: currentColor;
+    border: 1px solid currentColor;
+    border-radius: 4px;
 }
 
 .footer {
@@ -313,13 +327,19 @@ main>.section:nth-child(3) {
     gap: 16px;
 }
 
-.footer-social-icon {
-    fill: currentColor;
+.footer-social-link {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--brand-color);
+    border-radius: 50%;
 }
 
-.footer-social-icon:hover,
-.footer-social-icon:focus {
-    fill: var(--success-color);
+.footer-social-link:hover,
+.footer-social-link:focus {
+    background-color: var(--success-color);
 }
 
 .filter-menu {
@@ -346,6 +366,7 @@ main>.section:nth-child(3) {
 
 .portfolio-item {
     flex-basis: calc((100% - 48px) / 3); 
+    cursor: pointer;
 }
 
 .portfolio-item:hover,
